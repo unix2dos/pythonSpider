@@ -8,8 +8,8 @@ browser.get('http://www.baidu.com/')
 
 
 
-# kw = browser.find_element_by_id("kw")
-# kw.send_keys("Selenium", Keys.RETURN)
+kw = browser.find_element_by_id("kw")
+kw.send_keys("Selenium", Keys.RETURN)
 
 
 # kw = browser.find_element_by_id("kw")
@@ -26,11 +26,11 @@ browser.get('http://www.baidu.com/')
 
 
 
-browser.execute_script(
-    '''
-    var kw = document.getElementById('kw');
-    var su = document.getElementById('su');
-    kw.value = 'Selenium';
-    su.click();
-    '''
-)
+# browser.execute_script(
+#     '''
+#     var kw = document.getElementById('kw');
+#     var su = document.getElementById('su');
+#     kw.value = 'Selenium';
+#     su.click();
+#     '''
+# )
